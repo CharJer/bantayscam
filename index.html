@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BantayScam UI/UX Prototype | Current Trends in IT P3 Exam</title>
+  <meta name="description" content="BantayScam: AI & Blockchain-Powered Fraud Defense & Community Scam Registry. Interactive UI/UX prototype for Current Trends in IT Examination.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e3a8a'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z'/></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP SHELL / EXAM PRESENTATION BAR -->
+  <header class="presentation-header">
+    <div class="presentation-brand">
+      <div class="logo-shield">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      </div>
+      <div>
+        <h1 class="project-headline">BantayScam Prototype</h1>
+        <p class="exam-subtext">Current Trends in IT &bull; P3 Examination Project &bull; Charlemagne Jerusalem</p>
+      </div>
+    </div>
+
+    <!-- Screen Navigation Switcher -->
+    <nav class="screen-selector" aria-label="Prototype Screen Navigation">
+      <button class="screen-tab active" data-screen="1">
+        <span class="tab-num">1</span> Home Dashboard
+      </button>
+      <button class="screen-tab" data-screen="2">
+        <span class="tab-num">2</span> Deep Threat Scanner
+      </button>
+      <button class="screen-tab" data-screen="3">
+        <span class="tab-num">3</span> BantayAI (Tech 1)
+      </button>
+      <button class="screen-tab" data-screen="4">
+        <span class="tab-num">4</span> Blockchain Ledger (Tech 2)
+      </button>
+      <button class="screen-tab" data-screen="5">
+        <span class="tab-num">5</span> Community Report
+      </button>
+    </nav>
+
+    <div class="header-tools">
+      <button id="btn-export-all" class="btn btn-primary btn-sm" title="Download screenshots for Word Doc">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Save Screenshot
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN STAGE / PHONE SIMULATOR -->
+  <main class="simulator-stage">
+    
+    <!-- Info Panel / Screen Explainer Sidebar -->
+    <aside class="screen-info-panel">
+      <div class="info-card">
+        <span class="badge-screen-id" id="info-screen-tag">SCREEN 1 OF 5</span>
+        <h2 class="info-screen-title" id="info-screen-title">Home Page &amp; Main Security Dashboard</h2>
+        <p class="info-screen-desc" id="info-screen-desc">
+          Provides everyday users with real-time security posture overview, one-tap scanning shortcuts, trending Philippine smishing alerts, and active protection status for linked family members.
+        </p>
+
+        <div class="tech-integration-box">
+          <h4 class="tech-box-title">Emerging Technology Focus:</h4>
+          <div id="info-tech-tags" class="tech-tags-list">
+            <span class="tech-pill ai">On-Device AI Threat Engine</span>
+            <span class="tech-pill bc">Blockchain Node Sync Active</span>
+          </div>
+        </div>
+
+        <div class="ux-rationale-box">
+          <h4 class="tech-box-title">Key UI/UX Design Decisions:</h4>
+          <ul id="info-ux-points" class="ux-points-list">
+            <li>Large, calming emerald shield indicator to communicate immediate protection status without cognitive overload.</li>
+            <li>High-contrast emergency threat feed with clear location tags (NCR, Cebu, Davao).</li>
+            <li>Senior-friendly Family Shield card showing elderly parents' protected status with one tap.</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- SMARTPHONE DEVICE FRAME -->
+    <div class="device-mockup">
+      <div class="device-frame">
+        
+        <!-- Status Bar -->
+        <div class="phone-status-bar">
+          <span class="status-time">9:41</span>
+          <div class="dynamic-island">
+            <span class="island-icon">🛡️</span>
+            <span class="island-text">Bantay Active</span>
+          </div>
+          <div class="status-icons">
+            <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M1 9h2v2H1V9zm4-3h2v5H5V6zm4-3h2v8H9V3zm4-3h2v11h-2V0z"/></svg>
+            <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5 2.5C9.7 2.5 11.7 3.4 13.1 4.8L14.5 3.4C12.7 1.6 10.2.5 7.5.5S2.3 1.6.5 3.4L1.9 4.8C3.3 3.4 5.3 2.5 7.5 2.5zm0 4c1.3 0 2.5.5 3.4 1.4L12.3 6.5C11.1 5.3 9.4 4.5 7.5 4.5S3.9 5.3 2.7 6.5L4.1 7.9c.9-.9 2.1-1.4 3.4-1.4zm0 4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5z"/></svg>
+            <svg width="22" height="11" viewBox="0 0 22 11" fill="currentColor"><rect x="1" y="1" width="18" height="9" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><rect x="2.5" y="2.5" width="15" height="6" rx="1"/><rect x="20" y="4" width="1.5" height="3" rx="0.5"/></svg>
+          </div>
+        </div>
+
+        <!-- APP CONTENT VIEWER (Screens 1 to 5) -->
+        <div class="phone-content-area" id="screen-container">
+
+          <!-- ========================================================
+               SCREEN 1: HOME PAGE / MAIN SECURITY DASHBOARD
+               ======================================================== -->
+          <div class="app-screen active" id="screen-1">
+            <!-- App Top Header -->
+            <div class="app-header">
+              <div class="user-profile-badge">
+                <div class="user-avatar">CJ</div>
+                <div class="user-meta">
+                  <span class="user-greeting">Mabuhay, Carlo!</span>
+                  <span class="user-plan">PHINMA SJC &bull; Manila</span>
+                </div>
+              </div>
+              <button class="btn-notif" aria-label="Notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                <span class="notif-dot"></span>
+              </button>
+            </div>
+
+            <!-- Shield Hero Card -->
+            <div class="shield-hero-card">
+              <div class="shield-icon-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div class="shield-text-wrap">
+                <span class="shield-status-tag">SYSTEM SHIELD: ACTIVE</span>
+                <h3 class="shield-title">Your Device is Protected</h3>
+                <p class="shield-desc">Real-time SMS &amp; e-wallet smishing protection synced with Philippine Blockchain Fraud Registry.</p>
+              </div>
+            </div>
+
+            <!-- Quick Metrics -->
+            <div class="metrics-row">
+              <div class="stat-box">
+                <span class="stat-number">14</span>
+                <span class="stat-label">Scams Blocked</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">0945...</span>
+                <span class="stat-label">Last Flagged</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">99.8%</span>
+                <span class="stat-label">AI Accuracy</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Grid -->
+            <div class="quick-actions-section">
+              <h4 class="section-micro-heading">QUICK DEFENSE TOOLS</h4>
+              <div class="action-tiles-grid">
+                <button class="action-tile" data-jump="2">
+                  <div class="tile-icon-wrap bg-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                  </div>
+                  <span class="tile-label">Deep Scanner</span>
+                </button>
+                <button class="action-tile" data-jump="3">
+                  <div class="tile-icon-wrap bg-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10a10 10 0 0 1-10-10C2 6.48 6.48 2 12 2zm0 14h.01M12 8v5"/></svg>
+                  </div>
+                  <span class="tile-label">Ask BantayAI</span>
+                </button>
+                <button class="action-tile" data-jump="4">
+                  <div class="tile-icon-wrap bg-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  </div>
+                  <span class="tile-label">Ledger Check</span>
+                </button>
+                <button class="action-tile" data-jump="5">
+                  <div class="tile-icon-wrap bg-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </div>
+                  <span class="tile-label">Report Scam</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Family Shield Overview Card -->
+            <div class="family-shield-card">
+              <div class="family-header">
+                <div>
+                  <h4 class="family-title">Family Shield Network</h4>
+                  <p class="family-sub">2 Senior Relatives Protected</p>
+                </div>
+                <span class="badge-safe">All Safe</span>
+              </div>
+              <div class="family-member-item">
+                <div class="member-avatar">👵</div>
+                <div class="member-info">
+                  <span class="member-name">Nanay Elena (+63 918...441)</span>
+                  <span class="member-alert-safe">1 Smishing Attempt Intercepted Today</span>
+                </div>
+                <span class="member-badge-pill">Protected</span>
+              </div>
+            </div>
+
+            <!-- Live Threat Radar in PH -->
+            <div class="threat-radar-card">
+              <div class="radar-header">
+                <span class="radar-tag"><span class="pulse-red"></span> LIVE THREAT RADAR</span>
+                <span class="radar-loc">NCR / Manila</span>
+              </div>
+              <div class="threat-item urgent">
+                <span class="threat-time">2 mins ago</span>
+                <p class="threat-text"><strong>High Alert:</strong> Fake "GCash Unclaimed Aid" SMS with spoofed link <code>gcash-aid-gov.ph</code> surging in Sampaloc area.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               SCREEN 2: MAIN FEATURE - SMISHING & THREAT SCANNER
+               ======================================================== -->
+          <div class="app-screen" id="screen-2">
+            <div class="screen-topbar">
+              <h3 class="screen-title">Deep Threat Scanner</h3>
+              <span class="engine-badge">AI NLP + URL Homograph Engine</span>
+            </div>
+
+            <!-- Mode Selector Switch -->
+            <div class="scanner-mode-switch">
+              <button class="mode-btn active" id="btn-mode-sms">Suspicious SMS / Link</button>
+              <button class="mode-btn" id="btn-mode-merchant">Merchant / E-Wallet ID</button>
+            </div>
+
+            <!-- Input Box -->
+            <div class="scan-input-card">
+              <label class="input-label" for="sample-sms-input">PASTE SUSPICIOUS MESSAGE OR LINK:</label>
+              <textarea id="sample-sms-input" class="scan-textarea" rows="4">GCASH NOTICE: Your account has been temporarily locked due to unverified SIM Registration. Reactivate now at https://gcash-security-auth.ph.top or your balance will be forfeited in 2 hours.</textarea>
+              <div class="input-footer-actions">
+                <span class="char-count">198 characters</span>
+                <button class="btn-clear-input" id="btn-paste-sample">Load Sample</button>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="btn-run-scan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              Scan Threat with BantayAI
+            </button>
+
+            <!-- SCAN RESULT CARD -->
+            <div class="scan-result-card" id="scan-result-card">
+              <div class="result-header critical">
+                <div class="result-badge-icon">🚨</div>
+                <div>
+                  <h4 class="result-headline">CRITICAL THREAT: SMISHING DETECTED</h4>
+                  <p class="result-sub">Risk Score: 98% (High Confidence Phishing)</p>
+                </div>
+              </div>
+
+              <div class="threat-breakdown-list">
+                <div class="threat-flag-item">
+                  <span class="flag-icon">⚠️</span>
+                  <div>
+                    <strong>Fake Domain Spoofing:</strong>
+                    <p><code>gcash-security-auth.ph.top</code> is NOT an official GCash domain (official is <code>gcash.com</code>).</p>
+                  </div>
+                </div>
+
+                <div class="threat-flag-item">
+                  <span class="flag-icon">⏳</span>
+                  <div>
+                    <strong>Artificial Urgency (Social Engineering):</strong>
+                    <p>"Forfeited in 2 hours" is a classic pressure tactic designed to induce panic.</p>
+                  </div>
+                </div>
+
+                <div class="threat-flag-item">
+                  <span class="flag-icon">📱</span>
+                  <div>
+                    <strong>SIM Registration Phishing Narrative:</strong>
+                    <p>Matches ongoing phishing cluster reported 437 times today in Metro Manila.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="result-actions-grid">
+                <button class="btn btn-danger btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                  Block Sender
+                </button>
+                <button class="btn btn-secondary btn-sm" data-jump="5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Add to Ledger
+                </button>
+                <button class="btn btn-secondary btn-sm" id="btn-share-family">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                  Warn Family
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               SCREEN 3: EMERGING TECH 1 - BANTAYAI THREAT EXPLAINER
+               ======================================================== -->
+          <div class="app-screen" id="screen-3">
+            <div class="screen-topbar">
+              <h3 class="screen-title">BantayAI Inspector</h3>
+              <span class="engine-badge ai">Multimodal Vision &amp; NLP</span>
+            </div>
+
+            <!-- Upload Receipt / Screenshot Area -->
+            <div class="ai-upload-card">
+              <div class="receipt-preview-box">
+                <div class="receipt-mock">
+                  <div class="mock-header">GCash &bull; Receipt Express</div>
+                  <div class="mock-amount">PHP 5,500.00</div>
+                  <div class="mock-row"><span>Ref No:</span> <strong>9002 4410 8129</strong></div>
+                  <div class="mock-row"><span>Sent to:</span> <strong>Carlo M.</strong></div>
+                  <div class="mock-badge-flagged">FAKE FONT DETECTED</div>
+                </div>
+              </div>
+              <div class="upload-controls">
+                <span class="upload-filename">receipt_sample_buyer.jpg</span>
+                <span class="upload-status-verified">Scanned by Computer Vision Model</span>
+              </div>
+            </div>
+
+            <!-- AI Conversational Breakdown in Plain Taglish -->
+            <div class="chat-thread-container">
+              <div class="chat-bubble ai">
+                <div class="ai-avatar-mini">🤖</div>
+                <div class="bubble-content">
+                  <p class="bubble-title">BantayAI Analysis:</p>
+                  <p>Huwag ipadala ang gamit! <strong>Peke ang GCash receipt na ito.</strong> Narito ang mga dahilan:</p>
+                  <ul class="bubble-list">
+                    <li><strong>Font Discrepancy:</strong> Ang Ref No. ay gumagamit ng Arial imbes na ang official GCash customized typeface.</li>
+                    <li><strong>Invalid Hash Checksum:</strong> Ang 12-digit reference number ay hindi nagtutugma sa GCash Luhn transaction algorithm.</li>
+                    <li><strong>Zero Balance Ledger Update:</strong> Walang katugmang confirmed transfer na pumasok sa network.</li>
+                  </ul>
+                  <p class="bubble-advice"><strong>Payo:</strong> Hingin sa buyer na magpadala ng screenshot mula sa mismong GCash Transaction History o maghintay ng actual in-app confirmation bago mag-deliver.</p>
+                </div>
+              </div>
+
+              <!-- User Follow-up Question -->
+              <div class="chat-bubble user">
+                <div class="bubble-content">
+                  <p>Paano kung sabihin ng buyer na may system delay lang ang bangko?</p>
+                </div>
+              </div>
+
+              <!-- AI Answer -->
+              <div class="chat-bubble ai">
+                <div class="ai-avatar-mini">🤖</div>
+                <div class="bubble-content">
+                  <p>Isa yan sa <strong>Top 3 Classic Excuses</strong> ng scammers sa Facebook Marketplace at Carousell. Kung delayed ang InstaPay, magpapakita dapat ito sa in-app Activity log bilang "Pending", hindi sa edited receipt.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Prompt Bar -->
+            <div class="chat-input-bar">
+              <input type="text" placeholder="Tanungin si BantayAI tungkol sa mensahe..." class="chat-input">
+              <button class="btn-send-chat" aria-label="Send">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               SCREEN 4: EMERGING TECH 2 - BLOCKCHAIN FRAUD REGISTRY
+               ======================================================== -->
+          <div class="app-screen" id="screen-4">
+            <div class="screen-topbar">
+              <h3 class="screen-title">Decentralized Fraud Ledger</h3>
+              <span class="engine-badge bc">Consortium Blockchain (L2)</span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="blockchain-search-card">
+              <label class="input-label" for="ledger-query-input">QUERY IMMUTABLE ON-CHAIN BLACKLIST:</label>
+              <div class="search-input-group">
+                <input type="text" id="ledger-query-input" value="0945 882 1904" class="ledger-input">
+                <button class="btn btn-primary btn-sm" id="btn-query-ledger">Search Ledger</button>
+              </div>
+              <span class="search-hint">Check GCash, Maya, Bank Account, or Mobile Number</span>
+            </div>
+
+            <!-- Blockchain Verified Result Card -->
+            <div class="onchain-record-card">
+              <div class="onchain-status-header flagged">
+                <div class="chain-icon">⛓️</div>
+                <div>
+                  <h4 class="chain-status-title">CONFIRMED FRAUDULENT ACCOUNT</h4>
+                  <span class="chain-status-sub">Blacklisted by 38 Community Staked Reports</span>
+                </div>
+              </div>
+
+              <!-- Cryptographic Proof Block -->
+              <div class="crypto-meta-table">
+                <div class="meta-row">
+                  <span class="meta-key">Smart Contract:</span>
+                  <span class="meta-val code">BantayRegistry.sol (v2.4)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Block Height:</span>
+                  <span class="meta-val code">#19,482,901</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Tx Hash:</span>
+                  <span class="meta-val code hash">0x8f4c...782910fa</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Immutable Stamp:</span>
+                  <span class="meta-val">Oct 28, 2026 &bull; 14:22:09 UTC</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Associated Name:</span>
+                  <span class="meta-val">"Mark Anthony S." (Reported Mule)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Confirmed Modus:</span>
+                  <span class="meta-val badge-mod">Fake Ayuda Smishing &bull; GCash Drain</span>
+                </div>
+              </div>
+
+              <!-- Why Blockchain Explainer Box -->
+              <div class="why-blockchain-box">
+                <div class="why-icon">🔒</div>
+                <div class="why-text">
+                  <strong>Why Blockchain Matters Here:</strong>
+                  <p>Because the record is cryptographically signed onto a decentralized consortium ledger, no scam syndicate, telecommunication insider, or central admin can bribe, modify, or erase this fraud history.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               SCREEN 5: ADDITIONAL FEATURE - COMMUNITY INCIDENT REPORT
+               ======================================================== -->
+          <div class="app-screen" id="screen-5">
+            <div class="screen-topbar">
+              <h3 class="screen-title">Report Fraud Incident</h3>
+              <span class="engine-badge">Cryptographic Evidence Dispatch</span>
+            </div>
+
+            <div class="wizard-steps-indicator">
+              <div class="step-pill active">1. Modus</div>
+              <div class="step-pill active">2. Details</div>
+              <div class="step-pill active">3. Evidence</div>
+              <div class="step-pill active">4. Submit</div>
+            </div>
+
+            <!-- Incident Form -->
+            <div class="report-form-card">
+              <div class="form-group">
+                <label class="form-label">SCAM TYPE / MODUS OPERANDI:</label>
+                <select class="form-select">
+                  <option selected>GCash / Maya Smishing (SIM Registration Fake Link)</option>
+                  <option>Fake Online Banking Deactivation SMS</option>
+                  <option>Facebook Marketplace Fake Receipt / Courier Scam</option>
+                  <option>Unauthorized SIM-Swap &amp; OTP Hijack</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">SCAMMER PHONE OR ACCOUNT NUMBER:</label>
+                <input type="text" class="form-input" value="0991 223 8812">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">FINANCIAL LOSS INCURRED (IF ANY):</label>
+                <input type="text" class="form-input" value="PHP 3,500.00">
+              </div>
+
+              <div class="evidence-preview-row">
+                <span class="evidence-badge">📎 2 Screenshots Attached (SMS + Phishing URL)</span>
+                <span class="evidence-hash">SHA256 Verified</span>
+              </div>
+
+              <!-- Dispatch Toggles -->
+              <div class="dispatch-options-card">
+                <label class="checkbox-row">
+                  <input type="checkbox" checked>
+                  <span>Broadcast immediate alert to my <strong>Family Shield</strong> network</span>
+                </label>
+                <label class="checkbox-row">
+                  <input type="checkbox" checked>
+                  <span>Stake and sign onto <strong>Blockchain Consortium Blacklist</strong></span>
+                </label>
+                <label class="checkbox-row">
+                  <input type="checkbox" checked>
+                  <span>Generate official <strong>CICC / PNP-ACG Blotter PDF</strong></span>
+                </label>
+              </div>
+
+              <button class="btn btn-danger btn-block" id="btn-submit-report">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                Sign &amp; Submit to Blockchain Ledger
+              </button>
+
+              <div class="case-generated-badge" id="report-success-box" style="display: none;">
+                <span class="case-icon">✅</span>
+                <div>
+                  <strong>Incident Recorded Successfully!</strong>
+                  <p>Case Reference: <code>#PH-2026-98124</code> (Synced to Telco Threat Pool)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM MOBILE NAVIGATION DOCK (Persistent Across Screens) -->
+        <nav class="phone-dock">
+          <button class="dock-item active" data-screen="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Home</span>
+          </button>
+          <button class="dock-item" data-screen="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <span>Scanner</span>
+          </button>
+          <button class="dock-item" data-screen="3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>BantayAI</span>
+          </button>
+          <button class="dock-item" data-screen="4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <span>Ledger</span>
+          </button>
+          <button class="dock-item" data-screen="5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span>Report</span>
+          </button>
+        </nav>
+
+        <!-- Home Bar Indicator -->
+        <div class="phone-home-indicator"></div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
